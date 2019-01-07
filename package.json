@@ -1,0 +1,26 @@
+{
+  "name": "mongo-scrape",
+  "version": "1.0.0",
+  "description": "A web scaper using mongo db",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camhallmen/mongo-scrape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camhallmen/mongo-scrape/issues"
+  },
+  "homepage": "https://github.com/camhallmen/mongo-scrape#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2"
+  }
+}
