@@ -17,22 +17,22 @@ mongoose.connect("mongodb://localhost/mongo-scrape", { useNewUrlParser: true })
 
 // Routes
 // Get some headlines
-app.get("scrape", function(req, res) {
+app.get("/scrape", function(req, res) {
     axios.get("https://www.nytimes.com/").then(function(response) {
   var $ = cheerio.load(response.data)
   var results = []
 
   $("div.css-1100km").each(function(i, element) {
-    var title = $(element).text()
-    var link = $(element).children().attr("href")
+   var title = $(element).text()
+    //var title = $(element).children("#css-3w1yun")
+    // var link = $(element).children().attr("href")
     results.push({
-      title: title,
-      link: link
+      title: title
     })
   })
-
-  // Log the results once you've looped through each of the elements found with cheerio
+  
   console.log(results)
+  res.send(results)
 });
 })
 

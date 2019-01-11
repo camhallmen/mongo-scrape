@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <title>Mongoose Scraper</title>
+    <style>
+      body {
+        background-image: url("assets/another.jpg");
+        background-size:100% 100%;
+      }
+      .article-break {
+        color: white;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 3px;
+      }
+      #header {
+        text-align: center;
+      }
+      #tagline {
+        text-align: center;
+      }
+      #scrape {
+        margin-left: 45%;
+        margin-right: 45%;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <h1>Wack Shit</h1>
-      <h2><i>Fuck this fucking bullshit</i></h2>
+      <h1 id="header">News Scraper</h1>
+      <h2 id="tagline"><i>Current news at the click of a button</i></h2>
+      <button id="scrape">Get me some news!</button>
       <div id="articles"></div>
       <div id="notes"></div>
     </div>
